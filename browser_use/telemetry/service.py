@@ -36,7 +36,7 @@ class ProductTelemetry:
 	_curr_user_id = None
 
 	def __init__(self) -> None:
-		telemetry_disabled = not CONFIG.ANONYMIZED_TELEMETRY
+		telemetry_disabled = True # TODO(antoine@escaoe.tech): port this to Escape
 		self.debug_logging = CONFIG.BROWSER_USE_LOGGING_LEVEL == 'debug'
 
 		if telemetry_disabled:
